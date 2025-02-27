@@ -10,5 +10,5 @@ function selectByGetElementById (value){
 
 
 function sumNumber (id, value){
-    selectByGetElementById(id).innerText = value;
+    document.getElementById(id).innerText = value;
 }

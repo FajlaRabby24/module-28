@@ -23,7 +23,7 @@
             <section class="mt-10 px-4">
                 <h1 class="text-2xl font-bold mb-2">Welcome to Payooo!</h1>
                 <p>Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
-
+                <!-- card container  -->
                 <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
                     <div id="add-money-box" class="box cursor-pointer border p-4 text-center rounded-sm">
                         <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
@@ -86,35 +86,39 @@
                 </section>
 
 
-                <!-- <section id="cashout" class="hidden">
+                <section id="cashout" class="hidden">
                     <h2 class="text-center text-2xl font-bold">Cash Out</h2>
-                        <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
 
-                            <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
-                                <div class="card-body">
+                        <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <form>
                                     <fieldset class="fieldset">
                                         <label class="fieldset-label">Acount number</label>
-                                        <input value="01301301302" id="Acount-nunber" type="number" maxlength="11"
+                                        <input value="01301301302" id="acount-nunber" type="number" maxlength="11"
                                             class="input" placeholder="type your  number" required />
                                         <label class="fieldset-label">Amount </label>
-                                        <input id="amount" type="number" maxlength="11" class="input"
+                                        <input id="cashout-amount" type="number" maxlength="11" class="input"
                                             placeholder="type your  Amount" required />
                                         <label class="fieldset-label">PIN</label>
-                                        <input value="1234" id="pin" type="text" class="input"
-                                            placeholder="type your PIN" required />
+                                        <input value="1234" id="cashout-pin" type="text" class="input" placeholder="type your PIN"
+                                            required />
                                         <div><a class="link link-hover">Forgot password?</a></div>
-                                        <button id="add-money" type="submit" id="login-btn"
+                                        <button id="cashout-btn" type="submit" id="login-btn"
                                             class="btn btn-neutral bg-blue-700 mt-4">Cash Out</button>
                                     </fieldset>
-                                </div>
+                                </form>
                             </div>
+                        </div>
                     </div>
-                </section> -->
+                </section>
             </section>
         </header>
     </section>
     <script src="./utilities/utilities.js"></script>
+    <script src="./js/toggle.js"></script>
     <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOut.js"></script>
 </body>
 
 </html>
